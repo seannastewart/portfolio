@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&family=Sorts+Mill+Goudy&display=swap');
+
+
+html {
+    font-size: 125%;
+}
+
+body {
+    font-family: $bodyFont;
+    color: $fontColour;
+    font-weight: 300;
+}
+
+h1, h3, h4 {
+    font-family: $headerFont; 
+    font-weight: lighter;  
+}
+
+
+h1 {
+    font-size: 75px;
+}
+
+h2  {
+    font-size: 25px;
+    font-weight: 300;
+    color: $lighterFont;
+    letter-spacing: 4px;
+}
+
+
+h3  {
+    font-size: 100px;
+    margin: 0;
+}
+
+h4 {
+    font-size: 65px;
+    margin:0;
+    
+}
+
+p {
+    font-size: 20px;
+}
+
+button {
+    font-size: 20px;
+}

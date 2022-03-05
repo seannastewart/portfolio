@@ -1,0 +1,24 @@
+header {
+    padding-bottom: 7% ;
+    position: relative;
+}
+
+h1 {
+    margin: 9% 0 0 0;
+}
+h2 {
+     margin-top: 0;
+     padding-bottom: 5%;
+ }
+
+ .headerImg {
+     display: flex;
+     justify-content: center;
+     
+     img {
+        position: absolute;
+        bottom: -35%;
+        width: 50%;
+        z-index: 1;
+        }
+ }

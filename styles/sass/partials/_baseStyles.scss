@@ -1,0 +1,36 @@
+.wrapper {
+    max-width: 1260px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: $bgPrimary;
+}
+
+.graphics {
+    position: absolute;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $fontColour;
+
+}
+
+p a:hover,
+p a:focus {
+        text-decoration: underline;
+}
+
+section {
+    position: relative;
+}

@@ -1,0 +1,49 @@
+.projects {
+    background-color: $bgSecondary;
+    padding: 10% 0;
+    .graphics {
+       top:15%;
+    
+    }
+    ul {
+        padding:0;
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 5% 0;
+            .imgContainer {
+                width: 60%;
+            }
+            .projectText{
+                width: 40%;
+            }
+            span {
+                font-weight: 400;
+            }
+        }
+
+    }
+}
+
+.links a {
+        color: $bgFooter;
+        background-color: $accentColour;
+        padding:3% 5%;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.2s ease-in;
+        display:inline-block;
+        font-weight: 400;
+        font-size: 18px;
+        &:first-child {
+            margin-right: 2% ;
+        }
+        &:hover,
+        &:focus{
+            box-shadow: 3px 3px #f3693f;
+            transform: translate(-3px, -3px);
+        }
+    }
+
+

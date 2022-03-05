@@ -1,0 +1,38 @@
+.about {
+    background-color: $bgSecondary;
+    padding: 15% 0;
+    h3 {
+        margin-top: 7%;
+    }
+    .graphics {
+        bottom: -15%;
+    }
+}
+
+.aboutContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+    .imagecontainer {
+        width: 35%;
+        padding-right: 5%;
+    }
+    img {
+        border-radius: 100%;
+        width: 100%;
+        
+    }
+    .aboutText {
+        border-left: 1px solid $fontColour;
+        padding:5% 0 5% 5%;
+        width:50%;
+        p {
+            margin-top: 0;
+        }
+        .firstPara {
+            font-weight: 500;
+        }
+    }
+}
+
