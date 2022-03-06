@@ -326,18 +326,22 @@ nav ul {
   font-size: 80px;
 }
 
+.menuIcon {
+  font-size: 50px;
+}
+
 nav {
   margin-top: 5%;
 }
-nav i {
+nav i, nav .menuIcon {
   cursor: pointer;
 }
 nav .slideOut {
   height: 100vh;
-  width: 400px;
+  width: 100%;
   position: fixed;
   top: 0;
-  left: -100%;
+  left: -200%;
   z-index: 20;
   background-color: white;
   -webkit-transition: 0.7s;
@@ -366,12 +370,14 @@ nav .show {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
 }
 .navUl li {
-  padding: 5% 0;
+  padding: 2% 0;
 }
 .navUl li a:hover, .navUl li a:focus {
   color: #ff8059;
@@ -401,7 +407,7 @@ h2 {
 }
 .headerImg img {
   position: absolute;
-  bottom: -35%;
+  bottom: -25%;
   width: 50%;
   z-index: 1;
 }
@@ -411,7 +417,9 @@ h2 {
   padding: 12% 0;
 }
 .about .graphics {
-  bottom: -15%;
+  bottom: 0;
+  right: 0;
+  width: 20%;
 }
 
 .aboutContent {
@@ -425,6 +433,7 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 4%;
+  padding-bottom: 10%;
 }
 .aboutContent .imagecontainer {
   width: 35%;
@@ -460,9 +469,9 @@ h2 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -497,6 +506,7 @@ h2 {
 
 .projects {
   background-color: #ebe6e0;
+  padding-bottom: 5%;
 }
 .projects .graphics {
   top: 15%;
@@ -657,4 +667,173 @@ footer .wrapper {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (max-width: 1000px) {
+  .skillsList li {
+    width: 25%;
+  }
+
+  .projects ul li {
+    margin: 10% 0;
+  }
+
+  .projectText h4 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 900px) {
+  .aboutContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aboutContent .imagecontainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0;
+    width: 40%;
+    margin-bottom: 5%;
+  }
+  .aboutContent .aboutText {
+    border: none;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+  }
+}
+@media (max-width: 800px) {
+  .projects ul li {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projects ul li .imgContainer {
+    width: 80%;
+  }
+  .projects ul li .projectText {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 700px) {
+  .skillsList li {
+    width: 33.3333333333%;
+  }
+
+  h3 {
+    font-size: 80px;
+  }
+
+  h2 {
+    padding-bottom: 15%;
+  }
+
+  .headerImg {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .headerImg img {
+    width: 60%;
+  }
+
+  .about h3 {
+    padding-top: 15%;
+  }
+
+  .contactContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .contactContainer .contactLeft {
+    width: 100%;
+    margin: 0;
+  }
+  .contactContainer .contactLeft ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .contactContainer .contactLeft ul li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contactContainer .contactRight {
+    width: 100%;
+    border: none;
+    padding: 2% 0 10% 0;
+  }
+
+  nav ul {
+    font-size: 50px;
+  }
+}
+@media (max-width: 550px) {
+  .skillsList li {
+    width: 50%;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 70px;
+  }
+
+  h4 {
+    font-size: 40px;
+  }
+
+  .about .graphics {
+    width: 30%;
+  }
+}
+@media (max-width: 400px) {
+  footer p {
+    font-size: 16px;
+  }
+
+  .aboutContent {
+    padding-bottom: 15%;
+  }
+
+  .navUl li {
+    padding: 10% 0;
+  }
 }

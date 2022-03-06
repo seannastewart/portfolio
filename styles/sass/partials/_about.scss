@@ -2,7 +2,9 @@
     background-color: $bgSecondary;
     padding: 12% 0;
     .graphics {
-        bottom: -15%;
+        bottom: 0;
+        right: 0;
+        width:20%;
     }
 }
 
@@ -11,6 +13,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 4%;
+    padding-bottom: 10%;
     .imagecontainer {
         width: 35%;
         padding-right: 5%;

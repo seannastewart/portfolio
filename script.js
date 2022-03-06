@@ -1,6 +1,6 @@
 const navElement = document.querySelector('nav');
 const slideOutNav = document.querySelector('.slideOut');
-const menuIcon = document.querySelector('i');
+const menuIcon = document.querySelector('.menuIcon');
 
 navElement.addEventListener("click", function (event) {
 

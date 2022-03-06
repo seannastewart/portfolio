@@ -1,0 +1,131 @@
+@media (max-width: 1000px) {
+    .skillsList li {
+        width: 25%;
+    }
+    .projects ul li{
+        margin: 10% 0;
+    }
+     .projectText h4 {
+         font-size: 50px;
+     }
+}
+
+@media (max-width: 900px) {
+    .aboutContent {
+        flex-direction: column;
+        .imagecontainer {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            width: 40%;
+            margin-bottom: 5%;
+        }
+        .aboutText {
+            border:none;
+            width:100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding:0;
+            
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .projects ul li {
+        flex-direction: column; 
+        .imgContainer {
+            width: 80%;
+        }
+        .projectText {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .skillsList li {
+        width: calc(100% / 3);
+    }
+    h3 {
+        font-size: 80px;
+    }
+    h2 {
+        padding-bottom: 15%;
+    }
+    .headerImg {
+        justify-content: center;
+        img {
+            width: 60%;
+        }
+    }
+    .about h3 {
+        padding-top: 15%;
+    }
+    .contactContainer {
+        flex-direction: column-reverse;
+        .contactLeft {
+            width:100%;
+            margin: 0;
+            ul {
+            display: flex;
+            margin:0;
+            padding:0;
+            justify-content: space-evenly;
+            li a {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            }
+        }
+        .contactRight {
+            width:100%;
+            border: none;
+            padding: 2% 0 10% 0;
+        }
+    }
+    nav ul {
+        font-size: 50px;
+    }
+
+}
+
+@media (max-width: 550px) {
+     .skillsList li {
+        width: 50%;
+    }
+   
+    h1 {
+        font-size: 50px;
+    }
+    h2 {
+            font-size: 22px;
+    }
+    h3 {
+        font-size: 70px;
+    }
+    h4 {
+        font-size: 40px;
+    }
+
+  .about .graphics {
+      width: 30%;
+  }
+
+}
+
+
+@media (max-width: 400px) {
+      footer p {
+          font-size: 16px;
+      }
+      .aboutContent {
+          padding-bottom: 15%;
+      }
+      .navUl li {
+         padding: 10% 0;
+}
+}
