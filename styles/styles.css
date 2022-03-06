@@ -757,6 +757,10 @@ footer .wrapper {
     padding-top: 15%;
   }
 
+  .contact .graphics {
+    top: -5%;
+  }
+
   .contactContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -798,6 +802,10 @@ footer .wrapper {
   nav ul {
     font-size: 50px;
   }
+
+  .aboutContent .imagecontainer {
+    width: 50%;
+  }
 }
 @media (max-width: 550px) {
   .skillsList li {
@@ -822,6 +830,11 @@ footer .wrapper {
 
   .about .graphics {
     width: 30%;
+  }
+
+  .aboutContent .imagecontainer {
+    width: 65%;
+    margin-bottom: 9%;
   }
 }
 @media (max-width: 400px) {
