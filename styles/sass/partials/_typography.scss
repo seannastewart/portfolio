@@ -32,6 +32,7 @@ h2  {
 h3  {
     font-size: 100px;
     margin: 0;
+    padding-top: 7%;
 }
 
 h4 {
@@ -46,4 +47,9 @@ p {
 
 button {
     font-size: 20px;
+}
+
+nav ul {
+    font-family: $headerFont;
+    font-size: 80px;
 }

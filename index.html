@@ -16,11 +16,16 @@
     <nav>
         <div class="wrapper">
             <i class="fas fa-equals"></i>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#project">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <div class="slideOut" id="slideOut">
+                <div class="closeButton">
+                    <i class="fas fa-times"></i>
+                </div>
+                <ul class="navUl">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
     <header>
@@ -36,10 +41,10 @@
 
     </header>
     <main>
-        <section class="about" id="about">
+        <section class="about">
             <img src="./assets/aboutgraphics.png" alt="geometric shapes" class="graphics">
             <div class="wrapper">
-                <h3>About Me</h3>
+                <h3 id="about">About Me</h3>
                 <div class="aboutContent">
                     <div class="imagecontainer">
                         <img src="./assets/orangecropped.jpg" alt="Seanna Stewart">
@@ -126,7 +131,7 @@
         <section class="projects">
             <img src="./assets/projectsgraphics1.png" alt="geometric shapes" class="graphics">
             <div class="wrapper">
-                <h3>My Projects</h3>
+                <h3 id="projects">My Projects</h3>
                 <ul>
                     <li>
                         <div class="imgContainer">
@@ -180,10 +185,10 @@
             </div>
         </section>
         <section class="contact">
-            <img src="./assets/contactgraphic.png" alt="geometric shapes" class="graphics left">
-            <img src="./assets/contactgraphic2.png" alt="geometric shapes" class="graphics right">
+
+            <img src="./assets/contactgraphic2.png" alt="geometric shapes" class="graphics">
             <div class="wrapper">
-                <h3>Contact Me</h3>
+                <h3 id="contact">Contact Me</h3>
                 <div class="contactContainer">
                     <div class="contactLeft">
                         <ul>
@@ -222,11 +227,13 @@
         </section>
     </main>
     <footer>
+        <img src="./assets/contactgraphic.png" alt="geometric shapes" class="graphics">
         <div class="wrapper">
             <p>Developed by Seanna Stewart</p>
-            <p>Designed by <a href="https://themeforest.net/user/webduck" target="_blank">WebDuck</a> </p>
+            <!-- <p>Designed by <a href="https://themeforest.net/user/webduck" target="_blank">WebDuck</a> </p> -->
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

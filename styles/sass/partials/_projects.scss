@@ -1,6 +1,5 @@
 .projects {
     background-color: $bgSecondary;
-    padding: 10% 0;
     .graphics {
        top:15%;
     
@@ -41,7 +40,7 @@
         }
         &:hover,
         &:focus{
-            box-shadow: 3px 3px #f3693f;
+            box-shadow: 4px 4px #f3693f;
             transform: translate(-3px, -3px);
         }
     }

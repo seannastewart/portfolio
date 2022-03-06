@@ -242,6 +242,10 @@ html {
   margin: 0 auto;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 img {
   max-width: 100%;
 }
@@ -301,6 +305,7 @@ h2 {
 h3 {
   font-size: 100px;
   margin: 0;
+  padding-top: 7%;
 }
 
 h4 {
@@ -316,13 +321,60 @@ button {
   font-size: 20px;
 }
 
+nav ul {
+  font-family: "Sorts Mill Goudy", serif;
+  font-size: 80px;
+}
+
 nav {
   margin-top: 5%;
 }
+nav i {
+  cursor: pointer;
+}
+nav .slideOut {
+  height: 100vh;
+  width: 400px;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  z-index: 20;
+  background-color: white;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+nav .slideOut .closeButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 25px;
+  padding: 5%;
+  cursor: pointer;
+}
+nav .show {
+  left: 0;
+}
 
-nav li {
-  position: absolute;
-  opacity: 0;
+.navUl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.navUl li {
+  padding: 5% 0;
+}
+.navUl li a:hover, .navUl li a:focus {
+  color: #ff8059;
 }
 
 header {
@@ -343,9 +395,9 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 .headerImg img {
   position: absolute;
@@ -356,10 +408,7 @@ h2 {
 
 .about {
   background-color: #ebe6e0;
-  padding: 15% 0;
-}
-.about h3 {
-  margin-top: 7%;
+  padding: 12% 0;
 }
 .about .graphics {
   bottom: -15%;
@@ -398,7 +447,7 @@ h2 {
 }
 
 .skills {
-  padding: 10% 0;
+  padding: 5% 0;
 }
 .skills .graphics {
   bottom: -10%;
@@ -448,7 +497,6 @@ h2 {
 
 .projects {
   background-color: #ebe6e0;
-  padding: 10% 0;
 }
 .projects .graphics {
   top: 15%;
@@ -494,22 +542,17 @@ h2 {
   margin-right: 2%;
 }
 .links a:hover, .links a:focus {
-  -webkit-box-shadow: 3px 3px #f3693f;
-          box-shadow: 3px 3px #f3693f;
+  -webkit-box-shadow: 4px 4px #f3693f;
+          box-shadow: 4px 4px #f3693f;
   -webkit-transform: translate(-3px, -3px);
           transform: translate(-3px, -3px);
 }
 
 .contact {
-  padding: 5% 0;
+  padding-bottom: 5%;
 }
-.contact .graphics.right {
+.contact .graphics {
   top: -10%;
-}
-.contact .graphics.left {
-  width: 15%;
-  left: 0;
-  bottom: 0;
 }
 .contact .contactContainer {
   display: -webkit-box;
@@ -554,6 +597,7 @@ h2 {
 }
 .contactRight p {
   font-size: 25px;
+  margin-top: 0;
 }
 .contactRight form {
   display: -webkit-box;
@@ -592,20 +636,25 @@ h2 {
   font-weight: bold;
 }
 .contactRight form button:hover, .contactRight form button:focus {
-  -webkit-box-shadow: 3px 3px #f3693f;
-          box-shadow: 3px 3px #f3693f;
+  -webkit-box-shadow: 4px 4px #f3693f;
+          box-shadow: 4px 4px #f3693f;
   -webkit-transform: translate(-3px, -3px);
           transform: translate(-3px, -3px);
 }
 
 footer {
   background-color: #ebe6e0;
+  position: relative;
+}
+footer .graphics {
+  bottom: 0;
+  width: 15%;
 }
 footer .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
