@@ -491,6 +491,8 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   z-index: 5;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
 }
 .skillsList li:hover, .skillsList li:focus {
   color: #ff8059;
@@ -591,6 +593,8 @@ h2 {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
 }
 .contactLeft ul li a:hover, .contactLeft ul li a:focus {
   color: #ff8059;
