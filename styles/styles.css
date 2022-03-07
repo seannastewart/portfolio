@@ -490,6 +490,7 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 5;
 }
 .skillsList li:hover, .skillsList li:focus {
   color: #ff8059;
@@ -509,7 +510,7 @@ h2 {
   padding-bottom: 5%;
 }
 .projects .graphics {
-  top: 15%;
+  top: 0;
 }
 .projects ul {
   padding: 0;
@@ -669,6 +670,11 @@ footer .wrapper {
           justify-content: center;
 }
 
+@media (max-width: 1300px) {
+  .projects .graphics {
+    top: 15%;
+  }
+}
 @media (max-width: 1000px) {
   .skillsList li {
     width: 25%;
