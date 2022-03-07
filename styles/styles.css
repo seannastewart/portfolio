@@ -777,9 +777,12 @@ footer .wrapper {
     display: flex;
     margin: 0;
     padding: 0;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contactContainer .contactLeft ul li {
+    margin: 0 5%;
   }
   .contactContainer .contactLeft ul li a {
     display: -webkit-box;
@@ -793,7 +796,8 @@ footer .wrapper {
         -ms-flex-align: center;
             align-items: center;
   }
-  .contactContainer .contactRight {
+
+  .contactRight {
     width: 100%;
     border: none;
     padding: 2% 0 10% 0;
