@@ -409,6 +409,7 @@ h2 {
   position: absolute;
   bottom: -25%;
   width: 50%;
+  max-width: 800px;
   z-index: 1;
 }
 
@@ -460,6 +461,7 @@ h2 {
 }
 .skills .graphics {
   bottom: -10%;
+  right: 0;
   z-index: 1;
 }
 
@@ -566,6 +568,7 @@ h2 {
 }
 .contact .graphics {
   top: -10%;
+  right: 0;
 }
 .contact .contactContainer {
   display: -webkit-box;
@@ -623,7 +626,8 @@ h2 {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.contactRight form input, .contactRight form textarea {
+.contactRight form input,
+.contactRight form textarea {
   background-color: #f6f5f1;
   border: 1px solid #1a2527;
   border-radius: 5px;
