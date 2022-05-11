@@ -1,23 +1,31 @@
 .projects {
     background-color: $bgSecondary;
     padding-bottom: 5%;
+
     .graphics {
-       top:0;
-    
+        top: 0;
+        left: 0;
+        width: 20%;
+
     }
+
     ul {
-        padding:0;
+        padding: 0;
+
         li {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin: 5% 0;
+
             .imgContainer {
                 width: 60%;
             }
-            .projectText{
+
+            .projectText {
                 width: 40%;
             }
+
             span {
                 font-weight: 400;
             }
@@ -27,23 +35,23 @@
 }
 
 .links a {
-        color: $bgFooter;
-        background-color: $accentColour;
-        padding:3% 5%;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: 0.2s ease-in;
-        display:inline-block;
-        font-weight: 400;
-        font-size: 18px;
-        &:first-child {
-            margin-right: 2% ;
-        }
-        &:hover,
-        &:focus{
-            box-shadow: 4px 4px #f3693f;
-            transform: translate(-3px, -3px);
-        }
+    color: $bgFooter;
+    background-color: $accentColour;
+    padding: 3% 5%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 18px;
+
+    &:first-child {
+        margin-right: 2%;
     }
 
-
+    &:hover,
+    &:focus {
+        box-shadow: 4px 4px #f3693f;
+        transform: translate(-3px, -3px);
+    }
+}

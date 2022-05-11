@@ -515,6 +515,8 @@ h2 {
 }
 .projects .graphics {
   top: 0;
+  left: 0;
+  width: 20%;
 }
 .projects ul {
   padding: 0;
